@@ -14,10 +14,22 @@ struct ContentView: View {
     var body: some View {
         List(repositories, id: \.id) { item in
             VStack(alignment: .leading) {
-                Text(item.name)
-                Text(item.fullName)
-                Text("Forks: \(item.forks)")
-                Text("Watchers: \()")
+                HStack {
+                    Image(systemName: "arrow.branch")
+                    Text("Name: \(item.name)")
+                }
+                HStack {
+                    Image(systemName: "person.fill")
+                    Text("Owner: \(item.owner.login)")
+                }
+                HStack {
+                    Image(systemName: "tuningfork")
+                    Text("Forks: \(String(format: "%.0f", item.forks))")
+                }
+                HStack {
+                    Image(systemName: "star.fill")
+                    Text("Stars: \(String(format: "%.0f", item.stars))")
+                }
             }
             
         }.onAppear(perform: {

@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct RepositoriesNetwork: Network {
+struct RepositoriesNetwork: BaseAPI {
     
     var decoder: JSONDecoder = JSONDecoder()
     var environment: BaseUrl = .baseUrl

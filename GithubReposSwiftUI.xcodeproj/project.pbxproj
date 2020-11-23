@@ -17,11 +17,12 @@
 		E39CAD09256C44C400597C5C /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E39CAD08256C44C400597C5C /* BaseViewModel.swift */; };
 		E39CAD0D256C5E4C00597C5C /* BaseUrl.swift in Sources */ = {isa = PBXBuildFile; fileRef = E39CAD0C256C5E4C00597C5C /* BaseUrl.swift */; };
 		E39CAD11256C5E9600597C5C /* HttpMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = E39CAD10256C5E9600597C5C /* HttpMethod.swift */; };
-		E39CAD14256C5EC400597C5C /* NetworkRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = E39CAD13256C5EC400597C5C /* NetworkRoute.swift */; };
+		E39CAD14256C5EC400597C5C /* HttpRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E39CAD13256C5EC400597C5C /* HttpRequest.swift */; };
 		E39CAD18256C606500597C5C /* Resource.swift in Sources */ = {isa = PBXBuildFile; fileRef = E39CAD17256C606500597C5C /* Resource.swift */; };
-		E39CAD1B256C642800597C5C /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = E39CAD1A256C642800597C5C /* Network.swift */; };
+		E39CAD1B256C642800597C5C /* BaseAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = E39CAD1A256C642800597C5C /* BaseAPI.swift */; };
 		E39CAD1E256C659000597C5C /* RepositoriesNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = E39CAD1D256C659000597C5C /* RepositoriesNetwork.swift */; };
 		E39CAD21256C667F00597C5C /* RespositoryRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = E39CAD20256C667F00597C5C /* RespositoryRoute.swift */; };
+		E39CAD2A256C6E0700597C5C /* RepositoryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E39CAD29256C6E0700597C5C /* RepositoryViewModel.swift */; };
 		E3A2A02A256B339800CB78A7 /* Owner.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3A2A029256B339800CB78A7 /* Owner.swift */; };
 		E3A2A030256B356500CB78A7 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3A2A02F256B356500CB78A7 /* Repository.swift */; };
 		E3A2A034256B3F4700CB78A7 /* Repositories.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3A2A033256B3F4700CB78A7 /* Repositories.swift */; };
@@ -40,11 +41,12 @@
 		E39CAD08256C44C400597C5C /* BaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
 		E39CAD0C256C5E4C00597C5C /* BaseUrl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseUrl.swift; sourceTree = "<group>"; };
 		E39CAD10256C5E9600597C5C /* HttpMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpMethod.swift; sourceTree = "<group>"; };
-		E39CAD13256C5EC400597C5C /* NetworkRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRoute.swift; sourceTree = "<group>"; };
+		E39CAD13256C5EC400597C5C /* HttpRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpRequest.swift; sourceTree = "<group>"; };
 		E39CAD17256C606500597C5C /* Resource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resource.swift; sourceTree = "<group>"; };
-		E39CAD1A256C642800597C5C /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		E39CAD1A256C642800597C5C /* BaseAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseAPI.swift; sourceTree = "<group>"; };
 		E39CAD1D256C659000597C5C /* RepositoriesNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoriesNetwork.swift; sourceTree = "<group>"; };
 		E39CAD20256C667F00597C5C /* RespositoryRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RespositoryRoute.swift; sourceTree = "<group>"; };
+		E39CAD29256C6E0700597C5C /* RepositoryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryViewModel.swift; sourceTree = "<group>"; };
 		E3A2A029256B339800CB78A7 /* Owner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Owner.swift; sourceTree = "<group>"; };
 		E3A2A02F256B356500CB78A7 /* Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
 		E3A2A033256B3F4700CB78A7 /* Repositories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repositories.swift; sourceTree = "<group>"; };
@@ -131,6 +133,7 @@
 			isa = PBXGroup;
 			children = (
 				E39CAD08256C44C400597C5C /* BaseViewModel.swift */,
+				E39CAD29256C6E0700597C5C /* RepositoryViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -140,9 +143,9 @@
 			children = (
 				E39CAD0C256C5E4C00597C5C /* BaseUrl.swift */,
 				E39CAD10256C5E9600597C5C /* HttpMethod.swift */,
-				E39CAD13256C5EC400597C5C /* NetworkRoute.swift */,
+				E39CAD13256C5EC400597C5C /* HttpRequest.swift */,
 				E39CAD17256C606500597C5C /* Resource.swift */,
-				E39CAD1A256C642800597C5C /* Network.swift */,
+				E39CAD1A256C642800597C5C /* BaseAPI.swift */,
 				E39CAD1D256C659000597C5C /* RepositoriesNetwork.swift */,
 				E39CAD20256C667F00597C5C /* RespositoryRoute.swift */,
 			);
@@ -234,7 +237,7 @@
 				E39CAD21256C667F00597C5C /* RespositoryRoute.swift in Sources */,
 				E3A2A034256B3F4700CB78A7 /* Repositories.swift in Sources */,
 				E39CACFD256C18B400597C5C /* RemoteImage.swift in Sources */,
-				E39CAD14256C5EC400597C5C /* NetworkRoute.swift in Sources */,
+				E39CAD14256C5EC400597C5C /* HttpRequest.swift in Sources */,
 				E39CACF8256BF5FB00597C5C /* RepositoryDetails.swift in Sources */,
 				E3A2A02A256B339800CB78A7 /* Owner.swift in Sources */,
 				E39CAD09256C44C400597C5C /* BaseViewModel.swift in Sources */,
@@ -242,7 +245,8 @@
 				E374185C256B2A21006F85A6 /* GithubReposSwiftUIApp.swift in Sources */,
 				E3A2A030256B356500CB78A7 /* Repository.swift in Sources */,
 				E39CAD0D256C5E4C00597C5C /* BaseUrl.swift in Sources */,
-				E39CAD1B256C642800597C5C /* Network.swift in Sources */,
+				E39CAD1B256C642800597C5C /* BaseAPI.swift in Sources */,
+				E39CAD2A256C6E0700597C5C /* RepositoryViewModel.swift in Sources */,
 				E39CAD02256C1A9000597C5C /* RepositoryCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -8,15 +8,15 @@
 import Foundation
 import Combine
 
-protocol Network {
+protocol BaseAPI {
     
     var decoder: JSONDecoder { get set }
     var environment: BaseUrl { get set }
 }
 
-extension Network {
+extension BaseAPI {
     
-    func fetch<T: Decodable>(route: NetworkRoute) -> AnyPublisher<T, Error> {
+    func fetch<T: Decodable>(route: HttpRequest) -> AnyPublisher<T, Error> {
         let request = route.create(for: environment)
         return URLSession.shared
             .dataTaskPublisher(for: request)

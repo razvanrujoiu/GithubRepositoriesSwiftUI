@@ -7,14 +7,14 @@
 
 import Foundation
 
-protocol NetworkRoute {
+protocol HttpRequest {
     
     var path: String { get }
     var method: HttpMethod { get }
     var headers: [String: String]? { get }
 }
 
-extension NetworkRoute {
+extension HttpRequest {
     
     var headers: [String: String]? {
         return nil

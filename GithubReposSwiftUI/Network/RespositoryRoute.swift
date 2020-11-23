@@ -15,7 +15,7 @@ enum RepositoryRoute {
     case objc
 }
 
-extension RepositoryRoute: NetworkRoute {
+extension RepositoryRoute: HttpRequest {
     
     var path: String {
         switch self {

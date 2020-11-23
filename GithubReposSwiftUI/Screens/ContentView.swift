@@ -24,7 +24,7 @@ struct ContentView: View {
     }
     
     func loadRepositories() {
-        guard let endpoint = URL(string: "https://api.github.com/search/repositories?q=language:swift,objc&order=desc&sort=stars") else {
+        guard let endpoint = URL(string: "https://api.github.com/search/repositories?q=language:javascript&order=desc&sort=stars") else {
             print("API endpoint is invalid")
             return
         }

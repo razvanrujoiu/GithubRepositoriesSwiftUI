@@ -20,4 +20,9 @@ struct Owner: Codable {
         case avatarUrl = "avatar_url"
     }
     
+    static let example = Owner(id: 484656,
+                               login: "vsouza",
+                               url: "https://api.github.com/users/vsouza",
+                               avatarUrl: "https://avatars2.githubusercontent.com/u/484656?v=4")
+    
 }

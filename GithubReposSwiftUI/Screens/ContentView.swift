@@ -12,26 +12,12 @@ struct ContentView: View {
     @State var repositories = [Repository]()
     
     var body: some View {
-        List(repositories, id: \.id) { item in
-            VStack(alignment: .leading) {
-                HStack {
-                    Image(systemName: "arrow.branch")
-                    Text("Name: \(item.name)")
+        NavigationView {
+            List(repositories, id: \.id) { item in
+                NavigationLink(destination: RepositoryDetails(repository: item)) {
+                    RepositoryCell(repository: item)
                 }
-                HStack {
-                    Image(systemName: "person.fill")
-                    Text("Owner: \(item.owner.login)")
-                }
-                HStack {
-                    Image(systemName: "tuningfork")
-                    Text("Forks: \(String(format: "%.0f", item.forks))")
-                }
-                HStack {
-                    Image(systemName: "star.fill")
-                    Text("Stars: \(String(format: "%.0f", item.stars))")
-                }
-            }
-            
+            }.navigationBarTitle("Github Repositories")
         }.onAppear(perform: {
             loadRepositories()
         })

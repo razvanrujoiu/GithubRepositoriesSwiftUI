@@ -28,4 +28,14 @@ struct Repository: Codable, Identifiable {
         case forks = "forks_count"
         case stars = "stargazers_count"
     }
+    
+    static let example = Repository(id: 21700699,
+                                    name: "awesome-ios",
+                                    fullName: "vsouza/awesome-ios",
+                                    owner: Owner.example,
+                                    description: "A curated list of awesome iOS ecosystem, including Objective-C and Swift Projects",
+                                    language: "Swift",
+                                    forks: 6022,
+                                    stars: 36055)
+    
 }

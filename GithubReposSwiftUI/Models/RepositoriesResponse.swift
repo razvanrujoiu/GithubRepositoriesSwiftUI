@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Repositories: Codable {
+struct RepositoriesResponse: Codable {
     let items: [Repository]
     
     enum CodingKeys: String, CodingKey {

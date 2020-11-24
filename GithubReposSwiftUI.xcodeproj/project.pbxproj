@@ -14,18 +14,12 @@
 		E39CACF8256BF5FB00597C5C /* RepositoryDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = E39CACF7256BF5FB00597C5C /* RepositoryDetails.swift */; };
 		E39CACFD256C18B400597C5C /* RemoteImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E39CACFC256C18B400597C5C /* RemoteImage.swift */; };
 		E39CAD02256C1A9000597C5C /* RepositoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E39CAD01256C1A9000597C5C /* RepositoryCell.swift */; };
-		E39CAD09256C44C400597C5C /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E39CAD08256C44C400597C5C /* BaseViewModel.swift */; };
-		E39CAD0D256C5E4C00597C5C /* BaseUrl.swift in Sources */ = {isa = PBXBuildFile; fileRef = E39CAD0C256C5E4C00597C5C /* BaseUrl.swift */; };
-		E39CAD11256C5E9600597C5C /* HttpMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = E39CAD10256C5E9600597C5C /* HttpMethod.swift */; };
-		E39CAD14256C5EC400597C5C /* HttpRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E39CAD13256C5EC400597C5C /* HttpRequest.swift */; };
-		E39CAD18256C606500597C5C /* Resource.swift in Sources */ = {isa = PBXBuildFile; fileRef = E39CAD17256C606500597C5C /* Resource.swift */; };
-		E39CAD1B256C642800597C5C /* BaseAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = E39CAD1A256C642800597C5C /* BaseAPI.swift */; };
-		E39CAD1E256C659000597C5C /* RepositoriesNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = E39CAD1D256C659000597C5C /* RepositoriesNetwork.swift */; };
-		E39CAD21256C667F00597C5C /* RespositoryRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = E39CAD20256C667F00597C5C /* RespositoryRoute.swift */; };
-		E39CAD2A256C6E0700597C5C /* RepositoryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E39CAD29256C6E0700597C5C /* RepositoryViewModel.swift */; };
+		E39CAD35256C9A7300597C5C /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = E39CAD34256C9A7300597C5C /* APIClient.swift */; };
+		E39CAD39256C9C0900597C5C /* RepositoryAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = E39CAD38256C9C0900597C5C /* RepositoryAPI.swift */; };
+		E39CAD3C256CA0CC00597C5C /* RepositoryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E39CAD3B256CA0CC00597C5C /* RepositoryViewModel.swift */; };
 		E3A2A02A256B339800CB78A7 /* Owner.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3A2A029256B339800CB78A7 /* Owner.swift */; };
 		E3A2A030256B356500CB78A7 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3A2A02F256B356500CB78A7 /* Repository.swift */; };
-		E3A2A034256B3F4700CB78A7 /* Repositories.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3A2A033256B3F4700CB78A7 /* Repositories.swift */; };
+		E3A2A034256B3F4700CB78A7 /* RepositoriesResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3A2A033256B3F4700CB78A7 /* RepositoriesResponse.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,18 +32,12 @@
 		E39CACF7256BF5FB00597C5C /* RepositoryDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryDetails.swift; sourceTree = "<group>"; };
 		E39CACFC256C18B400597C5C /* RemoteImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteImage.swift; sourceTree = "<group>"; };
 		E39CAD01256C1A9000597C5C /* RepositoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryCell.swift; sourceTree = "<group>"; };
-		E39CAD08256C44C400597C5C /* BaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
-		E39CAD0C256C5E4C00597C5C /* BaseUrl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseUrl.swift; sourceTree = "<group>"; };
-		E39CAD10256C5E9600597C5C /* HttpMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpMethod.swift; sourceTree = "<group>"; };
-		E39CAD13256C5EC400597C5C /* HttpRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpRequest.swift; sourceTree = "<group>"; };
-		E39CAD17256C606500597C5C /* Resource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resource.swift; sourceTree = "<group>"; };
-		E39CAD1A256C642800597C5C /* BaseAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseAPI.swift; sourceTree = "<group>"; };
-		E39CAD1D256C659000597C5C /* RepositoriesNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoriesNetwork.swift; sourceTree = "<group>"; };
-		E39CAD20256C667F00597C5C /* RespositoryRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RespositoryRoute.swift; sourceTree = "<group>"; };
-		E39CAD29256C6E0700597C5C /* RepositoryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryViewModel.swift; sourceTree = "<group>"; };
+		E39CAD34256C9A7300597C5C /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		E39CAD38256C9C0900597C5C /* RepositoryAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryAPI.swift; sourceTree = "<group>"; };
+		E39CAD3B256CA0CC00597C5C /* RepositoryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryViewModel.swift; sourceTree = "<group>"; };
 		E3A2A029256B339800CB78A7 /* Owner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Owner.swift; sourceTree = "<group>"; };
 		E3A2A02F256B356500CB78A7 /* Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
-		E3A2A033256B3F4700CB78A7 /* Repositories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repositories.swift; sourceTree = "<group>"; };
+		E3A2A033256B3F4700CB78A7 /* RepositoriesResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoriesResponse.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,7 +70,7 @@
 		E374185A256B2A21006F85A6 /* GithubReposSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
-				E39CAD0B256C5E3300597C5C /* Network */,
+				E39CAD33256C9A5B00597C5C /* Http */,
 				E39CAD07256C439A00597C5C /* ViewModels */,
 				E39CAD00256C1A7900597C5C /* Cells */,
 				E39CACFB256C18A400597C5C /* Utils */,
@@ -132,24 +120,18 @@
 		E39CAD07256C439A00597C5C /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
-				E39CAD08256C44C400597C5C /* BaseViewModel.swift */,
-				E39CAD29256C6E0700597C5C /* RepositoryViewModel.swift */,
+				E39CAD3B256CA0CC00597C5C /* RepositoryViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
 		};
-		E39CAD0B256C5E3300597C5C /* Network */ = {
+		E39CAD33256C9A5B00597C5C /* Http */ = {
 			isa = PBXGroup;
 			children = (
-				E39CAD0C256C5E4C00597C5C /* BaseUrl.swift */,
-				E39CAD10256C5E9600597C5C /* HttpMethod.swift */,
-				E39CAD13256C5EC400597C5C /* HttpRequest.swift */,
-				E39CAD17256C606500597C5C /* Resource.swift */,
-				E39CAD1A256C642800597C5C /* BaseAPI.swift */,
-				E39CAD1D256C659000597C5C /* RepositoriesNetwork.swift */,
-				E39CAD20256C667F00597C5C /* RespositoryRoute.swift */,
+				E39CAD34256C9A7300597C5C /* APIClient.swift */,
+				E39CAD38256C9C0900597C5C /* RepositoryAPI.swift */,
 			);
-			path = Network;
+			path = Http;
 			sourceTree = "<group>";
 		};
 		E3A2A028256B336700CB78A7 /* Models */ = {
@@ -157,7 +139,7 @@
 			children = (
 				E3A2A029256B339800CB78A7 /* Owner.swift */,
 				E3A2A02F256B356500CB78A7 /* Repository.swift */,
-				E3A2A033256B3F4700CB78A7 /* Repositories.swift */,
+				E3A2A033256B3F4700CB78A7 /* RepositoriesResponse.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -231,23 +213,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E39CAD18256C606500597C5C /* Resource.swift in Sources */,
-				E39CAD11256C5E9600597C5C /* HttpMethod.swift in Sources */,
+				E39CAD39256C9C0900597C5C /* RepositoryAPI.swift in Sources */,
 				E374185E256B2A21006F85A6 /* ContentView.swift in Sources */,
-				E39CAD21256C667F00597C5C /* RespositoryRoute.swift in Sources */,
-				E3A2A034256B3F4700CB78A7 /* Repositories.swift in Sources */,
+				E3A2A034256B3F4700CB78A7 /* RepositoriesResponse.swift in Sources */,
 				E39CACFD256C18B400597C5C /* RemoteImage.swift in Sources */,
-				E39CAD14256C5EC400597C5C /* HttpRequest.swift in Sources */,
 				E39CACF8256BF5FB00597C5C /* RepositoryDetails.swift in Sources */,
 				E3A2A02A256B339800CB78A7 /* Owner.swift in Sources */,
-				E39CAD09256C44C400597C5C /* BaseViewModel.swift in Sources */,
-				E39CAD1E256C659000597C5C /* RepositoriesNetwork.swift in Sources */,
 				E374185C256B2A21006F85A6 /* GithubReposSwiftUIApp.swift in Sources */,
 				E3A2A030256B356500CB78A7 /* Repository.swift in Sources */,
-				E39CAD0D256C5E4C00597C5C /* BaseUrl.swift in Sources */,
-				E39CAD1B256C642800597C5C /* BaseAPI.swift in Sources */,
-				E39CAD2A256C6E0700597C5C /* RepositoryViewModel.swift in Sources */,
 				E39CAD02256C1A9000597C5C /* RepositoryCell.swift in Sources */,
+				E39CAD35256C9A7300597C5C /* APIClient.swift in Sources */,
+				E39CAD3C256CA0CC00597C5C /* RepositoryViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -8,16 +8,27 @@
 import Foundation
 import Combine
 
-class RepositoryViewModel: BaseViewModel, ObservableObject {
+class RepositoryViewModel: ObservableObject {
     
-    typealias NetworkResource = Repository
+    @Published var repositories: [Repository] = []
+    var cancellationToken: AnyCancellable?
     
-    var resource: Resource<NetworkResource> = .loading
-    var baseApi: BaseAPI
-    var request: HttpRequest = RepositoryRoute.java
-    var bag: Set<AnyCancellable> = Set<AnyCancellable>()
+    init() {
+        getRepositories()
+    }
+}
+
+extension RepositoryViewModel {
     
-    init(with baseApi: BaseAPI) {
-        self.baseApi = baseApi
+    func getRepositories() {
+        cancellationToken = RepositoryAPI.request(.noPath)
+            .mapError({ (error) -> Error in
+                print(error)
+                return error
+            }).sink(receiveCompletion: { _ in
+                
+            }, receiveValue: {
+                self.repositories = $0.items
+            })
     }
 }

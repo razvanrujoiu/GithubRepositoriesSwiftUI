@@ -21,7 +21,7 @@ class RepositoryViewModel: ObservableObject {
 extension RepositoryViewModel {
     
     func getRepositories() {
-        cancellationToken = RepositoryAPI.request(.noPath)
+        cancellationToken = RepositoryAPI.request(.none)
             .mapError({ (error) -> Error in
                 print(error)
                 return error

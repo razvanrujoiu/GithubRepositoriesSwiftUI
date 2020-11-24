@@ -15,7 +15,7 @@ enum RepositoryAPI {
 
 enum RepositoryPath: String {
     
-    case noPath = ""
+    case none = ""
 
 }
 

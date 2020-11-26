@@ -11,4 +11,6 @@ URLSession <br />
 Codable <br />
 JSONDecoder <br />
 
+<b>TODO:</b> Add pagination <br />
+
 <b> Feel free to contribute 😁 </b>

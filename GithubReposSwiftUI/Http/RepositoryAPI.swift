@@ -10,7 +10,7 @@ import Combine
 
 enum RepositoryAPI {
     static let apiClient = APIClient()
-    static let baseUrl = URL(string: "https://api.github.com/search/repositories?q=language:java&order=desc&sort=stars")!
+    static let baseUrl = URL(string: "https://api.github.com/search/repositories?q=language:javascript&order=desc&sort=stars")!
 }
 
 enum RepositoryPath: String {

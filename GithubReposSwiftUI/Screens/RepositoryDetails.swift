@@ -14,7 +14,7 @@ struct RepositoryDetails: View {
     var body: some View {
         ZStack {
             RoundedRectangle(cornerRadius: 25.0, style: .continuous)
-                .fill(Color.init(UIColor(red: 255/255, green: 255/255, blue: 250/255, alpha: 1)))
+                .fill(Color.white)
                 .shadow(radius: 24)
                 .padding(EdgeInsets(top: 24, leading: 24, bottom: 24, trailing: 24))
             VStack(alignment: .center) {

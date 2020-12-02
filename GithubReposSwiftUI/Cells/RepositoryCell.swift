@@ -10,7 +10,7 @@ import SwiftUI
 struct RepositoryCell: View {
     let repository: Repository
     var body: some View {
-        VStack(alignment: .leading) {
+        LazyVStack(alignment: .leading) {
             HStack {
                 Image(systemName: "arrow.branch")
                 Text("Name: \(repository.name)")
